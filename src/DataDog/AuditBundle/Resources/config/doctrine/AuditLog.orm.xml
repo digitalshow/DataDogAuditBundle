@@ -9,6 +9,10 @@
       <generator strategy="IDENTITY"/>
     </id>
 
+    <indexes>
+      <index name="audit_logs_table_action_source_id" columns="tbl,action,source_id" />
+    </indexes>
+
     <field name="action" length="12" />
     <field name="tbl" length="128" />
     <field name="diff" type="json" nullable="true" />

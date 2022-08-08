@@ -6,6 +6,11 @@ DataDog\AuditBundle\Entity\AuditLog:
       type: bigint
       generator:
         strategy: IDENTITY
+  
+  indexes:
+    index:
+      name: audit_logs_table_action_source_id
+      columns: tbl, action, source_id
 
   oneToOne:
     source:
