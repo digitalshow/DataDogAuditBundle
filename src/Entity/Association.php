@@ -12,7 +12,7 @@ class Association
 
     private ?string $label;
 
-    private int $fk;
+    private int|string $fk;
 
     private string $class;
 
@@ -43,7 +43,7 @@ class Association
         return $this->label;
     }
 
-    public function getFk(): int
+    public function getFk(): int|string
     {
         return $this->fk;
     }
